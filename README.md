@@ -278,4 +278,4 @@ Posteriormente se exportó el archivo en .stl y se imprimio en 3D con filamento 
 <img src="Media/Montaje.jpg" alt="grriper_montaje_real" width="70%">
 
 En este caso solo se uso una salida digital denominada Out_9 creada en el controlador virtual y en el controlador real del robot, que era la encargada de controlar la succión del huevo.
-<img src="Media/salidas.png" alt="cambios_velocidad_epson" width="70%">
+<img src="Media/salidas.png" alt="cambios_velocidad_epson" width="50%">
