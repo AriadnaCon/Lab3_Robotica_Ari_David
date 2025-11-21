@@ -1,88 +1,19 @@
-<h2>1. Cuadro Comparativo de los robots Motoman MH6, IRB140 y EPSON T3-401S</h2>
-<h2>1) Tabla comparativa (Motoman MH6, ABB IRB140, EPSON T3-401S)</h2>
 
-<table>
-  <thead>
-    <tr>
-      <th>Característica</th>
-      <th>Motoman MH6</th>
-      <th>ABB IRB 140</th>
-      <th>EPSON T3-401S</th>
-    </tr>
-  </thead>
+## 1) Tabla comparativa (Motoman MH6, ABB IRB140, EPSON T3-401S)
 
-  <tbody>
+| **Característica** | **Motoman MH6** | **ABB IRB 140** | **EPSON T3-401S** |
+|--------------------|------------------|------------------|--------------------|
+| **Tipo / Ejes** | 6-ejes articulado | 6-ejes articulado | 4-ejes SCARA (T-series) |
+| **Carga máxima** | 6 kg (MH6 estándar; existe MH6-10 de 10 kg) | 6 kg (IRB 140). Alcance 810 mm (hasta eje 5). | 3 kg (payload), alcance horizontal ~400 mm; eje Z stroke ≈150 mm; repetibilidad 0.02 mm |
+| **Alcance (aprox.)** | Hasta ~1.4 m (depende versión / montaje) | 810 mm (documentado IRB140) | 400 mm brazo; Z 150 mm |
+| **DOF (grados libertad)** | 6 DOF | 6 DOF | 4 DOF (θ1, θ2, Z, U rotación herramienta) |
+| **Velocidad / ciclo** | Ejes rápidos — diseñado para alta velocidad (datos por eje en ficha) | Alta aceleración / ciclos rápidos apto para montajes y machine tending | Ciclo estándar ~0.54 s (depende del ciclo). Max. speed ejes T3 según ficha |
+| **Precisión / repetibilidad** | ≈0.08 mm (varía por modelo y configuración) | Alta precisión; repetibilidad depende la configuración del IRB140 | ≈0.02 mm (T3 series) |
+| **Montaje** | Suelo / pared / invertido (según restricciones de modelo) | Suelo / pared / invertido (flexible) | Mesa / sobremesa (tabletop) / integrado (modelo All-in-One) |
+| **Aplicaciones típicas** | Ensamblaje, manipulación, dispensado, mecanizado ligero, soldadura ligera | Soldadura, ensamblaje, manipulado, machine tending, pulido | Ensamblaje, pick & place, paletizado ligero, piezas pequeñas, integrable con visión |
+| **Controlador / Software** | Yaskawa controller (DX100 / MP series); soporte para programación offline | ABB IRC5; programación RAPID (RobotStudio) | Controlador RC700/RC90 con EPSON RC+ 7.0; lenguaje SPEL+; integración USB/Ethernet |
 
-    <tr>
-      <td><strong>Tipo / Ejes</strong></td>
-      <td>6-ejes articulado</td>
-      <td>6-ejes articulado</td>
-      <td>4-ejes SCARA (T-series)</td>
-    </tr>
-
-    <tr>
-      <td><strong>Carga máxima</strong></td>
-      <td>6 kg (existe versión MH6-10 de 10 kg)</td>
-      <td>6 kg; alcance 810 mm</td>
-      <td>3 kg; alcance horizontal ~400 mm; Z stroke ≈150 mm; repetibilidad 0.02 mm</td>
-    </tr>
-
-    <tr>
-      <td><strong>Alcance (aprox.)</strong></td>
-      <td>Hasta ~1.4 m (según versión / montaje)</td>
-      <td>810 mm</td>
-      <td>400 mm brazo / 150 mm eje Z</td>
-    </tr>
-
-    <tr>
-      <td><strong>DOF (grados de libertad)</strong></td>
-      <td>6 DOF</td>
-      <td>6 DOF</td>
-      <td>4 DOF (θ1, θ2, Z, U)</td>
-    </tr>
-
-    <tr>
-      <td><strong>Velocidad / Ciclo</strong></td>
-      <td>Ejes rápidos, diseño para alta velocidad</td>
-      <td>Alta aceleración; ciclos rápidos</td>
-      <td>Ciclo típico ~0.54 s (dependiendo trayectoria)</td>
-    </tr>
-
-    <tr>
-      <td><strong>Precisión / Repetibilidad</strong></td>
-      <td>≈0.08 mm (según modelo)</td>
-      <td>Alta precisión; repetibilidad según configuración</td>
-      <td>≈0.02 mm</td>
-    </tr>
-
-    <tr>
-      <td><strong>Montaje</strong></td>
-      <td>Suelo / pared / invertido</td>
-      <td>Suelo / pared / invertido</td>
-      <td>Mesa / sobremesa / integrado (All-in-One)</td>
-    </tr>
-
-    <tr>
-      <td><strong>Aplicaciones típicas</strong></td>
-      <td>Ensamblaje, manipulación, dispensado, mecanizado ligero, soldadura ligera</td>
-      <td>Soldadura, ensamblaje, machine tending, pulido, manipulación general</td>
-      <td>Pick & place, ensamblaje ligero, paletizado pequeño, manipulación precisa</td>
-    </tr>
-
-    <tr>
-      <td><strong>Controlador / Software</strong></td>
-      <td>Yaskawa DX100 / MP series; soporte de programación offline</td>
-      <td>ABB IRC5; programación RAPID (RobotStudio)</td>
-      <td>Controlador RC700/RC90; software EPSON RC+ 7.0; lenguaje SPEL+; USB/Ethernet</td>
-    </tr>
-
-  </tbody>
-</table>
-
-<p><em>Nota:</em> Las fichas técnicas oficiales deben incluirse en el repositorio como referencia.</p>
-
-
-<hr>
+> *Nota:* Las fichas técnicas y manuales oficiales de donde se obtuvo la información se encuentran en la carpeta DOCS
 
 <h2>2. Configuración Home del EPSON T3-401S</h2>
 <p>
