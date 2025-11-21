@@ -85,7 +85,7 @@ El robot puede controlarse de dos formas:
 
 
 
-##4) Niveles de velocidad para movimientos manuales en EPSON RC+ 7.5.2
+## 4) Niveles de velocidad para movimientos manuales en EPSON RC+ 7.5.2
 
 El robot EPSON T3-401S permite ajustar la velocidad de movimiento manual (**Jogging**) desde el software **EPSON RC+ 7.5.2** o desde el teach pendant (cuando está disponible). Estos niveles afectan únicamente el modo **TEACH**, donde el desplazamiento está deliberadamente limitado por razones de seguridad.
 
