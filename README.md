@@ -1,6 +1,8 @@
 
 ## 1) Tabla comparativa (Motoman MH6, ABB IRB140, EPSON T3-401S)
 
+A continuación se presenta una tabla comparativa de las especificaciones técnicas de los manipuladores:  EPSON T3-401S, Motoman MH6 y el ABB IRB140.
+
 | **Característica** | **Motoman MH6** | **ABB IRB 140** | **EPSON T3-401S** |
 |--------------------|------------------|------------------|--------------------|
 | **Tipo / Ejes** | 6-ejes articulado | 6-ejes articulado | 4-ejes SCARA (T-series) |
@@ -14,6 +16,47 @@
 | **Controlador / Software** | Yaskawa controller (DX100 / MP series); soporte para programación offline | ABB IRC5; programación RAPID (RobotStudio) | Controlador RC700/RC90 con EPSON RC+ 7.0; lenguaje SPEL+; integración USB/Ethernet |
 
 > *Nota:* Las fichas técnicas y manuales oficiales de donde se obtuvo la información se encuentran en la carpeta DOCS
+
+## 2) Configuraciones de Home en EPSON T3-401S
+El manipulador EPSON T3-401S utiliza encoders absolutos y relativos simultáneamente para determinar la posición angular de cada articulación.
+
++El encoder absoluto conserva la posición incluso después de apagar el robot.
++El encoder relativo mide desplazamientos desde un punto de referencia durante la operación.
+
+El sistema define su Home en términos de pulsos del encoder (no en grados ni milímetros), según el manual oficial de EPSON, la posición Home estándar coloca todas las articulaciones del robot en 0 pulsos, lo cual representa la configuración geométrica de referencia establecida por fábrica. Sin embargo, en este laboratorio se definió una disposición de Home alternativa, diferente a la del manual, debido a que el Home original limitaba el rango de movimiento lateral y generaba posiciones menos prácticas para la manipulación de objetos. Con el nuevo Home, el robot obtiene un mayor alcance útil hacia ambos lados, especialmente para tareas que requieren desplazamiento amplio sobre la mesa de trabajo.
+
+## A continuación se presenta la tabla con las posiciones de cada una de las articulaciones en el Home de fábrica: 
+
+| Articulación | Pulsos de Home | Descripción de la posición |
+|--------------|--------------------------|-----------------------------|
+| **J1**       | 0                        | Brazo 1 orientado hacia el eje +X del robot |
+| **J2**       | 0                        | Brazo 2 alineado con Brazo 1 (colineares) |
+| **J3 (Z)**   | 0                        | Eje vertical Z en su punto superior (retraído) |
+| **J4 (U)**   | 0                        | Herramienta orientada hacia el extremo del brazo 2 (rotación neutra) |
+| **J5**       | —                        | No aplica para T3-401S |
+| **J6**       | —                        | No aplica para T3-401S |
+
+> Esta es la configuración Home **por defecto de fábrica**, utilizada como referencia interna por el controlador.
+
+### Home alternativo definido en el laboratorio
+
+Durante el laboratorio, se implementó un **Home alternativo** debido a que el Home original limitaba el rango de trabajo lateral del robot. El nuevo Home permitió un rango de desplazamiento mayor y más equilibrado hacia ambos lados, facilitando tareas como la manipulación de bandejas y trayectorias amplias.
+
+Valores del Home alternativo configurado:
+
+- **J1 = 204800 pulsos**  
+- **J2 = 0**  
+- **J3 = 0**  
+- **J4 = 0**
+
+Orden de homing asignado:
+
+- **J1 → Step 2**  
+- **J2 → Step 2**  
+- **J3 → Step 1**  
+- **J4 → Step 2**
+
+Esta disposición redefine la orientación inicial del robot, posicionándolo de manera más centrada y aprovechando mejor el espacio de trabajo, tal como se evidencia en la simulación 3D utilizada durante la práctica.
 
 <h2>2. Configuración Home del EPSON T3-401S</h2>
 <p>
