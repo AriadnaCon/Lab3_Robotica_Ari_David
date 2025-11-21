@@ -279,3 +279,50 @@ Posteriormente se exportó el archivo en .stl y se imprimio en 3D con filamento 
 
 En este caso solo se uso una salida digital denominada Out_9 creada en el controlador virtual y en el controlador real del robot, que era la encargada de controlar la succión del huevo.
 <img src="Media/salidas.png" alt="cambios_velocidad_epson" width="50%">
+
+## 8) Diagrama de flujo – Rutina de movimiento con patrón de caballo
+
+La siguiente figura muestra el flujo lógico completo del proceso de manipulación de huevos utilizando el patrón de movimiento tipo “caballo de ajedrez”. Este diagrama resume de manera clara cómo el robot toma un huevo, lo mueve desde su posición actual hasta la posición destino, y repite este proceso para dos rutas distintas en un ciclo controlado. Es una representación conceptual del comportamiento del programa SPEL+ implementado en EPSON RC+, sin incluir código, solo la lógica funcional del proceso.
+
+```mermaid
+flowchart TD
+
+%% ==== INICIO GENERAL ====
+
+A0([Inicio]) --> A1[Conexión con el robot por USB desde EPSON RC+]
+A1 --> A2[Encendido de motores]
+A2 --> A4[Ejecutar Home]
+
+A4 --> A5[Configurar el pallet 6×5 con posiciones 1 a 30]
+A5 --> A7[Iniciar rutina del patrón de caballo]
+A7 --> C{¿ i ≤ 29?}
+
+
+%%  MOVIMIENTO HUEVO 1 
+
+
+C -->|Sí| H1A[Mover a la posición actual del huevo 1]
+H1A --> H1B[Activar vacío para tomar el huevo 1]
+H1B --> H1C[Mover a la posición destino del huevo 1]
+H1C --> H1D[Desactivar vacío y soltar el huevo 1]
+
+
+%% MOVIMIENTO HUEVO 2 =
+
+
+H1D --> H2A[Mover a la posición actual del huevo 2]
+H2A --> H2B[Activar vacío para tomar el huevo 2]
+H2B --> H2C[Mover a la posición destino del huevo 2]
+H2C --> H2D[Desactivar vacío y soltar el huevo 2]
+H2D --> I[Incrementar i]
+I --> C
+
+
+%% FIN
+
+C -->|No| A9[Finalizar recorrido completo del patrón]
+A9 --> A10[Regresar a Home]
+A10 --> A11([Fin])
+
+---
+
