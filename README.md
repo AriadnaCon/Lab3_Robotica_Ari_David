@@ -197,7 +197,7 @@ Esto permite desarrollar rutinas sin necesidad de tener el robot activo todo el 
 
 ---
 
-#### **2.4. Gestión de E/S (Entradas y Salidas)**
+#### **5.2.4. Gestión de E/S (Entradas y Salidas)**
 El software permite ver y manipular:
 - **IO digitales** (salidas a actuadores como grippers, ventosas, válvulas),
 - **IO analógicas**,
@@ -206,7 +206,7 @@ El software permite ver y manipular:
 
 ---
 
-#### **2.5. Herramientas de configuración del robot**
+#### **5.2.5. Herramientas de configuración del robot**
 Incluye módulos para:
 - Configurar herramientas (Tool Frames),
 - Locales (User Frames),
@@ -217,7 +217,7 @@ Incluye módulos para:
 
 ---
 
-#### **2.6. Monitoreo del robot en tiempo real**
+#### **5.2.6. Monitoreo del robot en tiempo real**
 EPSON RC+ muestra:
 - Posición actual del robot (J1–J4, XYZ, U),
 - Velocidad actual,
@@ -228,7 +228,7 @@ EPSON RC+ muestra:
 
 ---
 
-#### **2.7. Ejecución de programas**
+#### **5.2.7. Ejecución de programas**
 El software permite ejecutar programas SPEL+ directamente desde la PC:
 - Ejecutar paso a paso,
 - Ejecutar completo,
