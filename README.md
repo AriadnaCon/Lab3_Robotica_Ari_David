@@ -268,9 +268,10 @@ El PC solo envía el programa y monitorea la ejecución.
 ---
 ### 7) Diseño técnico del gripper neumático por vacío.
 
+<img src="Media/Gripper_Robotica.png" alt="gripper" width="50%">
 Se diseño un gripper en el software fusion, teninedo en cuenta las medidas de las chupas dadas por el laboratorio y a su vez el flange del robot, las dimensiones del gripper se ven en el plano más abajo. 
 
-
+<img src="Media/plano.png" alt="cambios_velocidad_epson" width="70%">
 
 Posteriormente se exportó el archivo en .stl y se imprimio en 3D con filamento PLA, tambien se compro un tornillo para poder sujetarlo al robot, a continuación se deja el montaje fisico realizado.
 
