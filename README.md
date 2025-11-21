@@ -137,10 +137,122 @@ El nivel activo se puede identificar fácilmente:
 - En robots que cuentan con pendante, aparece el indicador **Jog Speed: Low/High** en pantalla.
 - La selección se realiza desde los botones del menú Jog.
 
+##5) Funcionalidades principales de EPSON RC+ 7.x y comunicación con el manipulador
 
-### Recomendaciones de uso
-- **Low**: para enseñar puntos, trabajar cerca de objetos, zonas confinadas y ajustes finos.
-- **High**: para desplazamientos amplios cuando hay visibilidad total y espacio libre.
-- **POWER LOW**: siempre que se trabaje cerca del robot para mayor seguridad.
-- **POWER HIGH**: solo cuando los motores requieren más torque.
+EPSON RC+ 7.x es el software oficial para programación, control, simulación y gestión de robots EPSON, incluyendo el T3-401S. Actúa como la interfaz central entre el usuario, el controlador del robot y los procesos internos de ejecución. Su diseño integra programación en SPEL+, simulación 3D, herramientas de calibración y monitoreo en tiempo real.
+
+### 5.1 Comunicación con el manipulador
+EPSON RC+ se comunica directamente con el controlador del robot (RC90/RC700, según modelo) usando dos protocolos principales:
+
+- **USB Directo (modo Controller USB):**  
+  Conexión punto a punto entre el PC y el controlador del robot. Recomendado para trabajo en laboratorio, ya que es inmediato y no requiere configuración de red.
+
+- **Ethernet / TCP-IP:**  
+  Usado en entornos industriales para comunicación remota, celdas más grandes o integración con PLCs.
+
+Una vez establecida la conexión, el software permite:
+- Activar/desactivar motores,
+- Leer estados del robot (posición, flags, sensores),
+- Enviar comandos de movimiento en tiempo real (Jog),
+- Descargar programas SPEL+ al controlador,
+- Ejecutar, pausar o detener rutinas directamente desde el PC.
+
+El controlador del robot actúa como “cerebro” de tiempo real:  
+**EPSON RC+ envía comandos → el controlador los ejecuta → el robot se mueve.**
+
+### 5.2 Principales funcionalidades del software EPSON RC+ 7.x
+
+#### ** 5.2.1 Programación en SPEL+**
+El software incluye un entorno de desarrollo completo (IDE) para crear programas en **SPEL+**, el lenguaje oficial de EPSON.  
+Permite:
+- Scrpting estructurado (IF, WHILE, funciones),
+- Definición de puntos, poses y trayectorias,
+- Control de E/S digitales,
+- Gestión de errores y rutinas de seguridad.
+
+Los programas se ejecutan directamente en el controlador del robot.
+
+---
+
+#### **5.2.2. Jog & Teach (Movimiento manual y enseñanza de puntos)**
+La ventana **Jog & Teach** permite:
+- Mover el robot en modo manual (Joint, Local, World, Tool),
+- Cambiar velocidad (Low/High),
+- Enseñar puntos y guardarlos en archivos `.pts`,
+- Ejecutar trayectorias directamente,
+- Ver posición actual en grados, mm, pulsos o coordenadas cartesianas.
+
+Es la herramienta principal para preparar trayectorias reales antes de programarlas.
+
+---
+
+#### **5.2.3. Simulación 3D**
+EPSON RC+ incorpora un simulador del manipulador:
+- Simulación de movimiento en tiempo real,
+- Visualización de colisiones básicas,
+- Representación fiel de la cinemática del T3-401S,
+- Validación previa antes de ejecutar en hardware.
+
+Esto permite desarrollar rutinas sin necesidad de tener el robot activo todo el tiempo.
+
+---
+
+#### **2.4. Gestión de E/S (Entradas y Salidas)**
+El software permite ver y manipular:
+- **IO digitales** (salidas a actuadores como grippers, ventosas, válvulas),
+- **IO analógicas**,
+- Señales internas del robot (flags),
+- Señales del controlador.
+
+---
+
+#### **2.5. Herramientas de configuración del robot**
+Incluye módulos para:
+- Configurar herramientas (Tool Frames),
+- Locales (User Frames),
+- Zonas de trabajo y límites (XYZ Limits),
+- Ajustes de brazo (Hands, Arms),
+- Parámetros internos del controlador,
+- Configuración del Home y referencia en pulsos del encoder.
+
+---
+
+#### **2.6. Monitoreo del robot en tiempo real**
+EPSON RC+ muestra:
+- Posición actual del robot (J1–J4, XYZ, U),
+- Velocidad actual,
+- Estado de los motores (ON/OFF),
+- Estado de seguridad (Emergency Stop, Safeguard),
+- Modo (TEACH / AUTO),
+- Torque y Power Level (LOW / HIGH).
+
+---
+
+#### **2.7. Ejecución de programas**
+El software permite ejecutar programas SPEL+ directamente desde la PC:
+- Ejecutar paso a paso,
+- Ejecutar completo,
+- Configurar velocidad del programa,
+- Pausar, detener e inspeccionar errores.
+
+La ejecución real ocurre en el **controlador**, no en el PC.  
+El PC solo envía el programa y monitorea la ejecución.
+
+---
+
+### 5.3 Proceso completo para ejecutar movimientos desde EPSON RC+
+1. **Conectar el PC al robot** vía USB o Ethernet.  
+2. **Motor ON** y selección de potencia (Power Low / Power High).  
+3. **Modo TEACH** para:
+   - Jog manual,
+   - Configuración de puntos,
+   - Calibración o modificación de trayectorias.
+4. **Modo AUTO** para ejecutar rutinas programadas.  
+5. El controlador interpreta las instrucciones SPEL+:
+   - Cálculo cinemático,
+   - Planeación de trayectoria,
+   - Control de velocidad y aceleración,
+   - Envío de comandos a cada articulación.
+6. El robot se mueve según la trayectoria planificada.  
+7. EPSON RC+ muestra en tiempo real el estado de la ejecución.
 
