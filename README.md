@@ -256,3 +256,19 @@ El PC solo envía el programa y monitorea la ejecución.
 6. El robot se mueve según la trayectoria planificada.  
 7. EPSON RC+ muestra en tiempo real el estado de la ejecución.
 
+## 6) Análisis comparativo: EPSON RC+ 7.0 vs RoboDK vs ABB RobotStudio
+
+| **Criterio** | **EPSON RC+ 7.0** | **RoboDK** | **ABB RobotStudio** |
+|--------------|-------------------|------------|----------------------|
+| **Orientación** | Software propietario para robots Epson (SPEL+, integración nativa con controladores RC700/RC90). Excelente para control directo, funciones Epson (hands, IO, fieldbus) y comunicación con el manipulador. | Software multiplataforma de simulación y programación offline para muchas marcas; muy flexible, con post-procesadores para generar código para múltiples controladores. | Herramienta de simulación y programación offline específica para ABB; digital twin avanzado y optimizado para robots ABB y controladores IRC5. |
+| **Ventajas** | Integración completa con hardware Epson; lenguaje SPEL+ para control fino; opciones no-code (Express); soporte nativo de visión y “hands”. Ideal para trabajar con el controlador real en planta o laboratorio. | Amplia compatibilidad entre marcas; interfaz rápida para generar trayectorias; verificar zonas de trabajo; exportar programas con post-procesadores. Excelente para selección de hardware y prototipado rápido. | Gran integración con el ecosistema ABB: acceso completo al IRC5, digital twin, sincronización de datos del controlador, simulación avanzada de seguridad y ciclos. Ideal para comisionado industrial. |
+| **Limitaciones** | Limitado al ecosistema Epson para funciones avanzadas; menor utilidad si necesitas simular robots de otras marcas en la misma célula. | El código generado no siempre coincide al 100% con el controlador real (depende del post-procesador). No reemplaza herramientas OEM cuando se requieren capacidades propietarias muy específicas. | Solo trabaja con robots ABB. Si en tu célula tienes Epson o Yaskawa, RobotStudio no ofrece integración nativa. |
+| **Aplicaciones ideales** | Implementación en planta con robots Epson, integración con E/S y visión, enseñanza de puntos y control preciso. | Prototipado general, comparación entre robots, creación de trayectorias offline y simulación rápida multiplataforma. | Comisionado industrial con ABB, digital twin completo, validación de seguridad y análisis de ciclo para robots ABB. |
+
+---
+
+### **Recomendación práctica para el laboratorio**
+
+- **EPSON RC+ 7.0** → Úsalo para desarrollo, pruebas y ejecución real con el robot **EPSON T3-401S**.  
+- **RoboDK** → Ideal para simular la célula completa, comparar robots (Motoman/ABB) y generar trayectorias offline.  
+- **RobotStudio** → Empléalo únicamente si trabajas con robots **ABB** en la célula (como el IRB140) o si necesitas funciones avanzadas de digital twin específicas de ABB.
