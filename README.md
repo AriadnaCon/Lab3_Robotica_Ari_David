@@ -32,10 +32,16 @@ El sistema define su Home en términos de pulsos del encoder (no en grados ni mi
 | **J3 (Z)**   | 0                        | Eje vertical Z en su punto superior (retraído) |
 | **J4 (U)**   | 0                        | Herramienta orientada hacia el extremo del brazo 2 (rotación neutra) |
 
+A continuación se presenta la imagen del robot con la orientación de home de fábrica: 
+
+<img src="Media/Home.png" alt="Home_deFabrica" width="50%">
+
 > Esta es la configuración Home **por defecto de fábrica**, utilizada como referencia interna por el controlador.
 
 ### Home alternativo definido en el laboratorio
 
+<img src="Media/pos_home.png" alt="Home_alternativo" width="50%">
+> Imagen de la posición de home definida para el laboratorio.
 Durante el laboratorio, se implementó un **Home alternativo** debido a que el Home original limitaba el rango de trabajo lateral del robot. El nuevo Home permitió un rango de desplazamiento mayor y más equilibrado hacia ambos lados, facilitando tareas como la manipulación de bandejas y trayectorias amplias.
 
 Valores del Home alternativo configurado:
