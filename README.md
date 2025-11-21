@@ -71,10 +71,10 @@ El robot puede controlarse de dos formas:
 
 ### 3. Selección de sistema de coordenadas  
 - **Joint Mode (modo articulaciones):** se mueve cada articulación del robot individualmente (T1, T2, Z, U) usando las flechas J1+/J1-, J2+/J2-, etc.
-<img src="Media/despiece.png" alt="Herramienta_Despiece" width="50%"> 
+<img src="Media/Modo_Jogging.png" alt="Foto_programa_joint" width="50%"> 
   
 - **Cartesian/Tool/World Mode (modo cartesiano):** se mueve el efector final en los ejes X, Y, Z o se aplica rotación sobre el eje U o la herramienta. En EPSON RC+ se selecciona la pestaña [Jog & Teach] → desplegable “Mode” → Joint / World / Tool.
-<img src="Media/despiece.png" alt="Herramienta_Despiece" width="50%">
+<img src="Media/Mover_Local.png" alt="Foto_Epson_jog_local" width="50%">
 
 ### 4. Ejecución de traslaciones y rotaciones  
 - Traslaciones: en modo cartesiano, pulsar X+, X- para mover en X, Y+, Y- para Y, Z+, Z- para Z.  
