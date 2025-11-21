@@ -305,4 +305,5 @@ I --> C
 C -->|No| A9[Finalizar recorrido completo del patrón]
 A9 --> A10[Regresar a Home]
 A10 --> A11([Fin])
-
+```
+## 8) Diagrama de flujo – Rutina de movimiento con patrón de caballo
