@@ -40,9 +40,9 @@ A continuación se presenta la imagen del robot con la orientación de home de f
 
 ### Home alternativo definido en el laboratorio
 
+Durante el laboratorio, se implementó un **Home alternativo** debido a que el Home original limitaba el rango de trabajo lateral del robot. El nuevo Home permitió un rango de desplazamiento mayor y más equilibrado hacia ambos lados, facilitando tareas como la manipulación de bandejas y trayectorias amplias. A continuación se presenta una imagen del home alternativo:
+
 <img src="Media/pos_home_alt.png" alt="Home_alternativo" width="50%">
-> Imagen de la posición de home definida para el laboratorio.
-Durante el laboratorio, se implementó un **Home alternativo** debido a que el Home original limitaba el rango de trabajo lateral del robot. El nuevo Home permitió un rango de desplazamiento mayor y más equilibrado hacia ambos lados, facilitando tareas como la manipulación de bandejas y trayectorias amplias.
 
 Valores del Home alternativo configurado:
 
