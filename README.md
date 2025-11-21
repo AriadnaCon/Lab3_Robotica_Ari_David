@@ -23,9 +23,7 @@ El manipulador EPSON T3-401S utiliza encoders absolutos y relativos simultáneam
 - El encoder absoluto conserva la posición incluso después de apagar el robot.
 - El encoder relativo mide desplazamientos desde un punto de referencia durante la operación.
 
-El sistema define su Home en términos de pulsos del encoder (no en grados ni milímetros), según el manual oficial de EPSON, la posición Home estándar coloca todas las articulaciones del robot en 0 pulsos, lo cual representa la configuración geométrica de referencia establecida por fábrica. Sin embargo, en este laboratorio se definió una disposición de Home alternativa, diferente a la del manual, debido a que el Home original limitaba el rango de movimiento lateral y generaba posiciones menos prácticas para la manipulación de objetos. Con el nuevo Home, el robot obtiene un mayor alcance útil hacia ambos lados, especialmente para tareas que requieren desplazamiento amplio sobre la mesa de trabajo.
-
-## A continuación se presenta la tabla con las posiciones de cada una de las articulaciones en el Home de fábrica: 
+El sistema define su Home en términos de pulsos del encoder (no en grados ni milímetros), según el manual oficial de EPSON, la posición Home estándar coloca todas las articulaciones del robot en 0 pulsos, lo cual representa la configuración geométrica de referencia establecida por fábrica. Sin embargo, en este laboratorio se definió una disposición de Home alternativa, diferente a la del manual, debido a que el Home original limitaba el rango de movimiento lateral y generaba posiciones menos prácticas para la manipulación de objetos. Con el nuevo Home, el robot obtiene un mayor alcance útil hacia ambos lados, especialmente para tareas que requieren desplazamiento amplio sobre la mesa de trabajo. A continuación se presenta la tabla con las posiciones de cada una de las articulaciones en el Home de fábrica: 
 
 | Articulación | Pulsos de Home | Descripción de la posición |
 |--------------|--------------------------|-----------------------------|
