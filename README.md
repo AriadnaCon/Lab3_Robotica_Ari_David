@@ -286,43 +286,24 @@ La siguiente figura muestra el flujo lógico completo del proceso de manipulaci�
 
 ```mermaid
 flowchart TD
-
-%% ==== INICIO GENERAL ====
-
 A0([Inicio]) --> A1[Conexión con el robot por USB desde EPSON RC+]
 A1 --> A2[Encendido de motores]
 A2 --> A4[Ejecutar Home]
-
 A4 --> A5[Configurar el pallet 6×5 con posiciones 1 a 30]
 A5 --> A7[Iniciar rutina del patrón de caballo]
 A7 --> C{¿ i ≤ 29?}
-
-
-%%  MOVIMIENTO HUEVO 1 
-
-
 C -->|Sí| H1A[Mover a la posición actual del huevo 1]
 H1A --> H1B[Activar vacío para tomar el huevo 1]
 H1B --> H1C[Mover a la posición destino del huevo 1]
 H1C --> H1D[Desactivar vacío y soltar el huevo 1]
-
-
-%% MOVIMIENTO HUEVO 2 =
-
-
 H1D --> H2A[Mover a la posición actual del huevo 2]
 H2A --> H2B[Activar vacío para tomar el huevo 2]
 H2B --> H2C[Mover a la posición destino del huevo 2]
 H2C --> H2D[Desactivar vacío y soltar el huevo 2]
 H2D --> I[Incrementar i]
 I --> C
-
-
-%% FIN
-
 C -->|No| A9[Finalizar recorrido completo del patrón]
 A9 --> A10[Regresar a Home]
 A10 --> A11([Fin])
-
 ---
 
