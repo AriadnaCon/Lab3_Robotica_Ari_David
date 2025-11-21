@@ -40,7 +40,7 @@ A continuación se presenta la imagen del robot con la orientación de home de f
 
 ### Home alternativo definido en el laboratorio
 
-<img src="Media/pos_home.png" alt="Home_alternativo" width="50%">
+<img src="Media/pos_home_alt.png" alt="Home_alternativo" width="50%">
 > Imagen de la posición de home definida para el laboratorio.
 Durante el laboratorio, se implementó un **Home alternativo** debido a que el Home original limitaba el rango de trabajo lateral del robot. El nuevo Home permitió un rango de desplazamiento mayor y más equilibrado hacia ambos lados, facilitando tareas como la manipulación de bandejas y trayectorias amplias.
 
@@ -117,7 +117,7 @@ En EPSON RC+ 7.5.2 los movimientos manuales utilizan únicamente **dos niveles d
 5. Seleccionar:
    - **Low**
    - **High**
-    <img src="Media/cambios_velocidad.png" alt="cambios_velocidad_epson" width="50%">
+    <img src="Media/seleccion_vel.png" alt="cambios_velocidad_epson" width="50%">
 6. Comenzar a mover el robot con los botones de Jog en:
    - **Joint mode**  
    - **Local / World (cartesiano)**  
