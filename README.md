@@ -137,7 +137,7 @@ El nivel activo se puede identificar fácilmente:
 - En robots que cuentan con pendante, aparece el indicador **Jog Speed: Low/High** en pantalla.
 - La selección se realiza desde los botones del menú Jog.
 
-## 5) Funcionalidades principales de EPSON RC+ 7.x y comunicación con el manipulador
+## 5) Funcionalidades principales de EPSON RC+ 7.5.2 y comunicación con el manipulador
 
 EPSON RC+ 7.x es el software oficial para programación, control, simulación y gestión de robots EPSON, incluyendo el T3-401S. Actúa como la interfaz central entre el usuario, el controlador del robot y los procesos internos de ejecución. Su diseño integra programación en SPEL+, simulación 3D, herramientas de calibración y monitoreo en tiempo real.
 
