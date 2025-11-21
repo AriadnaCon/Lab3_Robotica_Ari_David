@@ -266,9 +266,11 @@ El PC solo envía el programa y monitorea la ejecución.
 | **Aplicaciones ideales** | Implementación en planta con robots Epson, integración con E/S y visión, enseñanza de puntos y control preciso. | Prototipado general, comparación entre robots, creación de trayectorias offline y simulación rápida multiplataforma. | Comisionado industrial con ABB, digital twin completo, validación de seguridad y análisis de ciclo para robots ABB. |
 
 ---
+### 7) Diseño técnico del gripper neumático por vacío.
 
-### **Recomendación práctica para el laboratorio**
+Se diseño un gripper en el software fusion, teninedo en cuenta las medidas de las chupas dadas por el laboratorio y a su vez el flange del robot, las dimensiones del gripper se ven en el plano más abajo. 
 
-- **EPSON RC+ 7.0** → Úsalo para desarrollo, pruebas y ejecución real con el robot **EPSON T3-401S**.  
-- **RoboDK** → Ideal para simular la célula completa, comparar robots (Motoman/ABB) y generar trayectorias offline.  
-- **RobotStudio** → Empléalo únicamente si trabajas con robots **ABB** en la célula (como el IRB140) o si necesitas funciones avanzadas de digital twin específicas de ABB.
+
+
+Posteriormente se exportó el archivo en .stl y se imprimio en 3D con filamento PLA, tambien se compro un tornillo para poder sujetarlo al robot, a continuación se deja el montaje fisico realizado.
+
