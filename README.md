@@ -111,6 +111,7 @@ En EPSON RC+ 7.5.2 los movimientos manuales utilizan únicamente **dos niveles d
 5. Seleccionar:
    - **Low**
    - **High**
+    <img src="Media/cambios_velocidad.png" alt="cambios_velocidad_epson" width="50%">
 6. Comenzar a mover el robot con los botones de Jog en:
    - **Joint mode**  
    - **Local / World (cartesiano)**  
@@ -130,15 +131,10 @@ El nivel activo se puede identificar fácilmente:
 - En robots que cuentan con pendante, aparece el indicador **Jog Speed: Low/High** en pantalla.
 - La selección se realiza desde los botones del menú Jog.
 
----
 
-### 5. Recomendaciones de uso
+### Recomendaciones de uso
 - **Low**: para enseñar puntos, trabajar cerca de objetos, zonas confinadas y ajustes finos.
 - **High**: para desplazamientos amplios cuando hay visibilidad total y espacio libre.
 - **POWER LOW**: siempre que se trabaje cerca del robot para mayor seguridad.
 - **POWER HIGH**: solo cuando los motores requieren más torque.
-
----
-
-Los niveles de velocidad permiten controlar el desplazamiento del robot durante la enseñanza, combinando seguridad, precisión y fluidez. En EPSON RC+ 7.5.2 estos niveles son simples (Low/High), lo cual facilita la operación y estandariza el comportamiento del T3-401S en modo TEACH.
 
