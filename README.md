@@ -56,64 +56,39 @@ Orden de homing asignado:
 
 Esta disposición redefine la orientación inicial del robot, posicionándolo de manera más centrada y aprovechando mejor el espacio de trabajo, tal como se evidencia en la simulación 3D utilizada durante la práctica.
 
-<h2>2. Configuración Home del EPSON T3-401S</h2>
-<p>
-Se describe la posición Home del manipulador, incluyendo la orientación inicial de las articulaciones 
-T1, T2, Z y U, su sentido positivo, la altura de referencia del eje Z y el uso del comando 
-<strong>HomeSet</strong>. Esta sección explica la correcta definición y recuperación del punto de referencia.
-</p>
+## 3) Procedimiento detallado para movimientos manuales (Teach Pendant / EPSON RC+)
 
-<hr>
+Este apartado describe cómo operar el robot manualmente, tanto usando el teach pendant como el software EPSON RC+ 7.0 conectado por USB, incluyendo cambio de modos de operación, selección de coordenadas (articulaciones vs cartesiano) y la ejecución de traslaciones y rotaciones en los ejes X, Y, Z.
 
-<h2>3. Procedimiento para realizar movimientos manuales</h2>
-<p>Se documenta el proceso de operación manual del robot, incluyendo:</p>
-<ul>
-  <li>Cambio entre modos TEACH y AUTO</li>
-  <li>Modo articular (Joint Mode)</li>
-  <li>Modo cartesiano (Cartesian Mode)</li>
-  <li>Traslaciones y rotaciones en X, Y, Z y U</li>
-  <li>Jog continuo y por incrementos</li>
-  <li>Habilitación del robot y activación de motores</li>
-</ul>
+### 1. Modos de operación y conexión  
+El robot puede controlarse de dos formas:
+- **Teach Pendant (caja de mando manual):** mediante el selector físico de modo del pendante se puede cambiar entre los modos “TEACH” y “AUTO”. 
+- **Software EPSON RC+ 7.0 (en PC):** se conecta al controlador del robot mediante cable USB (o Ethernet). En el software se selecciona [Setup] → [PC to Controller Communications] → “USB No. 1” → Connect.
+  Una vez conectado el PC, se puede controlar el robot desde el menú [Jog & Teach] o desde [Tools] → [Command Window].
 
-<hr>
+### 2. Cambio de modo  
+- En el teach pendant: girar el interruptor de modo a **TEACH** para habilitar el movimiento manual seguro, o a **AUTO** para ejecución de programas. 
+- En EPSON RC+: desde la pestaña [Robot Manager] → [Control Panel], asegurarse de que el estado esté en “Motor On” y el modo en TEACH para jog o en AUTO para ejecución.  
+- En modo TEACH, los movimientos se limitan para seguridad; en AUTO el robot podrá ejecutar rutinas programadas.
 
-<h2>4. Control de velocidades en movimientos manuales</h2>
-<p>
-Se explican los niveles de velocidad disponibles, cómo cambiar entre ellos y cómo se indica la 
-velocidad activa en el software EPSON RC+ 7.0. También se describen condiciones de seguridad 
-que limitan automáticamente la velocidad del robot.
-</p>
+### 3. Selección de sistema de coordenadas  
+- **Joint Mode (modo articulaciones):** se mueve cada articulación del robot individualmente (T1, T2, Z, U) usando las flechas J1+/J1-, J2+/J2-, etc.  
+- **Cartesian/Tool/World Mode (modo cartesiano):** se mueve el efector final en los ejes X, Y, Z o se aplica rotación sobre el eje U o la herramienta. En EPSON RC+ se selecciona la pestaña [Jog & Teach] → desplegable “Mode” → Joint / World / Tool. 
 
-<hr>
+### 4. Ejecución de traslaciones y rotaciones  
+- Traslaciones: en modo cartesiano, pulsar X+, X- para mover en X, Y+, Y- para Y, Z+, Z- para Z.  
+- Rotaciones: pulsar U+ / U- (o RU+/RU-) dependiendo de la interfaz para rotación de herramienta o eje U.  
+- En modo articulaciones: pulsar J1+, J1- etc. para ajustar cada articulación.  
+- Para movimientos más precisos se puede usar “step jog” (distancia fija por pulsación) o “continuous jog” (movimiento continuo mientras se mantiene la tecla). En EPSON RC+ se configura el “Jog Distance” y “Jog Speed”.
+- Recomendación: antes de mover transversalmente, elevar el eje Z a una altura de aproximación segura para evitar colisiones.
 
-<h2>5. Funcionalidades principales del software EPSON RC+ 7.0</h2>
-<p>
-El repositorio incluye la descripción del entorno RC+ 7.0: editor SPEL+, simulación en 3D, 
-configuración de herramientas, manejo de entradas y salidas, compilación y ejecución de programas, 
-y comunicación con el controlador RC90/RC700.
-</p>
+### 5. Seguridad y comprobaciones  
+- Asegúrate de que la **puerta de seguridad** esté cerrada o que el interruptor de liberación de enganche esté desactivado antes de operar en modo AUTO. 
+- Verifica que se muestre “Safety” atenuado en la barra de estado del RC+ y que los motores estén activados (“Motor On”). 
+- Durante el modo TEACH, el robot opera en potencia reducida; en modo AUTO el sistema reproduce el programa completo a la velocidad seleccionada. 
 
-<hr>
+---
 
-<h2>6. Comparación entre EPSON RC+ 7.0, RoboDK y RobotStudio</h2>
-<h3>EPSON RC+ 7.0</h3>
-<ul>
-  <li>Software oficial Epson</li>
-  <li>Total compatibilidad con el T3-401S</li>
-  <li>Ideal para pruebas físicas y programación real</li>
-</ul>
+Este procedimiento permite al usuario activar, configurar y mover manualmente el robot EPSON T3-401S de forma segura, tanto usando el teach pendant como el software EPSON RC+ 7.0, y realizar traslaciones y rotaciones de forma controlada.
 
-<h3>RoboDK</h3>
-<ul>
-  <li>Compatible con múltiples marcas</li>
-  <li>Excelente para simulación y prototipado</li>
-  <li>Incluye post-procesadores para código de robots</li>
-</ul>
 
-<h3>RobotStudio</h3>
-<ul>
-  <li>Software oficial ABB</li>
-  <li>Digital Twin avanzado</li>
-  <li>Ideal para programación del IRB140</li>
-</ul>
