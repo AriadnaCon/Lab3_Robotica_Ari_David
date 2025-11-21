@@ -33,8 +33,6 @@ El sistema define su Home en términos de pulsos del encoder (no en grados ni mi
 | **J2**       | 0                        | Brazo 2 alineado con Brazo 1 (colineares) |
 | **J3 (Z)**   | 0                        | Eje vertical Z en su punto superior (retraído) |
 | **J4 (U)**   | 0                        | Herramienta orientada hacia el extremo del brazo 2 (rotación neutra) |
-| **J5**       | —                        | No aplica para T3-401S |
-| **J6**       | —                        | No aplica para T3-401S |
 
 > Esta es la configuración Home **por defecto de fábrica**, utilizada como referencia interna por el controlador.
 
