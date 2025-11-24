@@ -259,7 +259,7 @@ El PC solo envía el programa y monitorea la ejecución.
 ## 6) Análisis comparativo: EPSON RC+ 7.0 vs RoboDK vs ABB RobotStudio
 
 | **Criterio** | **EPSON RC+ 7.0** | **RoboDK** | **ABB RobotStudio** |
-|--------------|-------------------|------------|----------------------|
+|--------------|-------------------|------------|---------------------|
 | **Orientación** | Software propietario para robots Epson (SPEL+, integración nativa con controladores RC700/RC90). Excelente para control directo, funciones Epson (hands, IO, fieldbus) y comunicación con el manipulador. | Software multiplataforma de simulación y programación offline para muchas marcas; muy flexible, con post-procesadores para generar código para múltiples controladores. | Herramienta de simulación y programación offline específica para ABB; gemelo digital avanzado y optimizado para robots ABB y controladores IRC5. |
 | **Ventajas** | Integración completa con hardware Epson; lenguaje SPEL+ para control fino; opciones no-code (Express); soporte nativo de visión y “hands”. Ideal para trabajar con el controlador real en planta o laboratorio. | Amplia compatibilidad entre marcas; interfaz rápida para generar trayectorias; verificar zonas de trabajo; exportar programas con post-procesadores. Excelente para selección de hardware y prototipado rápido. | Gran integración con el ecosistema ABB: acceso completo al IRC5, digital twin, sincronización de datos del controlador, simulación avanzada de seguridad y ciclos. Ideal para comisionado industrial. |
 | **Limitaciones** | Limitado al ecosistema Epson para funciones avanzadas; menor utilidad si necesitas simular robots de otras marcas en la misma célula. | El código generado no siempre coincide al 100% con el controlador real (depende del post-procesador). No reemplaza herramientas OEM cuando se requieren capacidades propietarias muy específicas. | Solo trabaja con robots ABB. Si en tu célula tienes Epson o Yaskawa, RobotStudio no ofrece integración nativa. |
@@ -275,7 +275,7 @@ Se diseño un gripper en el software fusion, teniendo en cuenta las medidas de l
 
 Posteriormente se exportó el archivo en .stl y se imprimio en 3D con filamento PLA, tambien se compro un tornillo para poder sujetarlo al robot, a continuación se deja el montaje fisico realizado.
 
-<img src="Media/Montaje.jpg" alt="grriper_montaje_real" width="70%">
+<img src="Media/Montaje.jpg" alt="grriper_montaje_real" width="50%">
 
 En este caso solo se uso una salida digital denominada Out_9 creada en el controlador virtual y en el controlador real del robot, que era la encargada de controlar la succión del huevo.
 
