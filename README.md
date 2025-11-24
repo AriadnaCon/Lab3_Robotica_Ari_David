@@ -342,6 +342,13 @@ Se presenta solamente el código en un archivo, denominado **codigo_huevos.txt**
 
 - [codigo_huevos.txt](simulation/codigo_huevos.txt)  
   Archivo con el código SPEL+ que implementa la trayectoria con patrón de caballo.
-  
-## 10) Video de la implementación real en el manipulador EPSON T3-401S
 
+## 10) Video de la simulación en EPSON RC+ del programa de movimiento de huevos
+
+## 11) Video de la implementación real en el manipulador EPSON T3-401S del Laboratorio
+
+La siguiente evidencia corresponde a la implementación física del programa cargado en el manipulador EPSON T3-401S. En el video se observa la ejecución real del patrón de movimiento tipo caballo aplicado al pallet de 6×5, validando el funcionamiento del código desarrollado en EPSON RC+ 7.5.2 y confirmando la correcta sincronización entre los movimientos del robot y el sistema de vacío, ahí mismo tambien se evidencia el gripper neumático levantando un huevo de manera segura.
+
+
+Video demostrativo del robot ejecutando el patrón de caballo:  
+➡️ [Ver implementación en YouTube](https://www.youtube.com/watch?v=oPb9vg-Ojd0)
