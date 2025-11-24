@@ -13,10 +13,9 @@
 
 ## 1. Introducción
 
-Este repositorio contiene el desarrollo del **Laboratorio No. 3 de Robótica Industrial** correspondiente al periodo **2025-II** en la **Universidad Nacional de Colombia**.  
-En esta práctica se estudia, configura y programa el manipulador **EPSON T3-401S**, un robot SCARA ampliamente utilizado para tareas de **pick & place**, manipulación de alta velocidad y ensamblaje ligero.
+Este repositorio contiene el desarrollo del **Laboratorio No. 3 de Robótica Industrial** correspondiente al periodo **2025-II** en la **Universidad Nacional de Colombia**. En esta práctica se estudia, configura y programa el manipulador **EPSON T3-401S**, un robot SCARA ampliamente utilizado para tareas de **pick & place**, manipulación de alta velocidad y ensamblaje ligero.
 
-El objetivo principal del laboratorio es implementar, tanto en simulación como en el equipo físico, una **trayectoria basada en el movimiento del caballo de ajedrez**, aplicada sobre un pallet de **6×5 posiciones**. Para ello se utiliza el entorno de programación **EPSON RC+ 7.x**, empleando el lenguaje **SPEL+** para la configuración de referencias geométricas, puntos del pallet, rutinas de movimiento y el control del sistema de vacío del gripper neumático.
+El objetivo principal del laboratorio es implementar, tanto en simulación como en el equipo físico, una **trayectoria basada en el movimiento del caballo de ajedrez**, aplicada sobre un pallet de 6×5 posiciones. Para ello se utiliza el entorno de programación EPSON RC+ 7.5.2, empleando el lenguaje SPEL+ para la configuración de referencias geométricas, puntos del pallet, rutinas de movimiento y el control del sistema de vacío del gripper neumático.
 
 ---
 
