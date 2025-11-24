@@ -313,15 +313,21 @@ La siguiente figura muestra la disposición espacial del pallet de 6×5 utilizad
 
 ### Puntos definidos para el pallet:
 <img src="Media/puntos.jpeg" alt="pallet" width="50%">
+Los anteriores valores cambian con respecto a la realidad, en cuanto la altura en Z, pues para la implementación en la vida real todos los puntos usan un valor de -152.
+
 ### Posiciones iniciales de los huevos
 <img src="Media/Pos_Ini.png" alt="pallet" width="40%">
 
+
+### Plano de planta
+
 Adicionalmente, se presenta el plano de planta donde se observa la ubicación del robot y la disposición de la cubeta de huevos dentro del espacio de trabajo. Este esquema permite identificar la orientación real del manipulador respecto al pallet, así como la relación entre las referencias espaciales usadas para la programación y el entorno físico del laboratorio.
 
+### Vista Lateral
+<img src="Media/lateral.jpeg" alt="vista_lateral" width="40%">
 
-
-
-
+### Vista Superior
+<img src="Media/arriba.jpeg" alt="Vista_superior" width="40%">
 
 ## 9) Código desarrollado en EPSON RC+ 7.0 para ejecutar la trayectoria con patr´on de caballo, adjuntado como
 anexo dentro del repositorio.
