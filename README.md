@@ -323,13 +323,20 @@ Los anteriores valores cambian con respecto a la realidad, en cuanto la altura e
 
 Adicionalmente, se presenta el plano de planta donde se observa la ubicación del robot y la disposición de la cubeta de huevos dentro del espacio de trabajo. Este esquema permite identificar la orientación real del manipulador respecto al pallet, así como la relación entre las referencias espaciales usadas para la programación y el entorno físico del laboratorio.
 
-### Vista Lateral
+### Vista lateral
 <img src="Media/lateral.jpeg" alt="vista_lateral" width="40%">
 
-### Vista Superior
+### Vista superior
 <img src="Media/arriba.jpeg" alt="Vista_superior" width="40%">
 
-## 9) Código desarrollado en EPSON RC+ 7.0 para ejecutar la trayectoria con patr´on de caballo, adjuntado como
-anexo dentro del repositorio.
+## 9) Código desarrollado en EPSON RC+ 7.5.2 para ejecutar la trayectoria con patrón de caballo
+
+El código que implementa la trayectoria con patrón de caballo fue desarrollado en EPSON RC+ 7.0 utilizando el lenguaje SPEL+.
+
+
+
+Se presenta solamente el código en un archivo, denominado **codigo_huevos.txt**, con, configuración del pallet y ejecución del movimiento de los dos huevos siguiendo el patrón predeterminado. Sin embargo para asegurar la correcta ejecución y reproducibilidad de la simulación, se recomienda descargar la carpeta completa **Junior_Lab3**, donde se incluyen todos los puntos, configuraciones y recursos necesarios del proyecto.
+
+
 ## 10) Video de la implementación real en el manipulador EPSON T3-401S
 
