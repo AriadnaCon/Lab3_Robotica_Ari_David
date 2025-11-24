@@ -298,6 +298,10 @@ Posteriormente se exportó el archivo en .stl y se imprimio en 3D con filamento 
 
 <img src="Media/Montaje.jpg" alt="grriper_montaje_real" width="50%">
 
+Aquí se encuentra el .step del gripper diseñado.
+  - [Diseño_Gripper](CAD/Griper_Robotica.stp)  
+
+
 En este caso solo se uso una salida digital denominada Out_9 creada en el controlador virtual y en el controlador real del robot, que era la encargada de controlar la succión del huevo.
 
 <img src="Media/salidas.png" alt="cambios_velocidad_epson" width="30%">
@@ -360,6 +364,7 @@ Se presenta solamente el código en un archivo, denominado **codigo_huevos.txt**
 
 - [Junior_Lab3.zip](simulation/Junior_Lab3.zip)  
   Contiene todo el proyecto completo exportado desde EPSON RC+.
+
 
 - [codigo_huevos.txt](simulation/codigo_huevos.txt)  
   Archivo con el código SPEL+ que implementa la trayectoria con patrón de caballo.
