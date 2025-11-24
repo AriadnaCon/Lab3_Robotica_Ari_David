@@ -337,6 +337,11 @@ El código que implementa la trayectoria con patrón de caballo fue desarrollado
 
 Se presenta solamente el código en un archivo, denominado **codigo_huevos.txt**, con, configuración del pallet y ejecución del movimiento de los dos huevos siguiendo el patrón predeterminado. Sin embargo para asegurar la correcta ejecución y reproducibilidad de la simulación, se recomienda descargar la carpeta completa **Junior_Lab3**, donde se incluyen todos los puntos, configuraciones y recursos necesarios del proyecto.
 
+- [Junior_Lab3.zip](simulation/Junior_Lab3.zip)  
+  Contiene todo el proyecto completo exportado desde EPSON RC+.
 
+- [codigo_huevos.txt](simulation/codigo_huevos.txt)  
+  Archivo con el código SPEL+ que implementa la trayectoria con patrón de caballo.
+  
 ## 10) Video de la implementación real en el manipulador EPSON T3-401S
 
