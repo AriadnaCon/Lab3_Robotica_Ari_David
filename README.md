@@ -371,6 +371,15 @@ Se presenta solamente el código en un archivo, denominado **codigo_huevos.txt**
 
 ## 10) Video de la simulación en EPSON RC+ del programa de movimiento de huevos
 
+A continuación se presenta la simulación del programa de movimiento de huevos en la cubeta, con el software EPSON RC+ 7.5.2, en este se observa el montaje de la cubeta, los huevos y el gripper, para mejor referencia visitar el link de youtube.
+
+
+### Video demostrativo de la simulación realizada:  
+
+➡️ [Ver Simulación en el software Epson RC+ en YouTube](https://youtu.be/2TddR1RULLw)
+![Vista previa del laboratorio](Media/simulacion.gif)
+
+
 ## 11) Video de la implementación real en el manipulador EPSON T3-401S del Laboratorio
 
 La siguiente evidencia corresponde a la implementación física del programa cargado en el manipulador EPSON T3-401S. En el video se observa la ejecución real del patrón de movimiento tipo caballo aplicado al pallet de 6×5, validando el funcionamiento del código desarrollado en EPSON RC+ 7.5.2 y confirmando la correcta sincronización entre los movimientos del robot y el sistema de vacío, ahí mismo tambien se evidencia el gripper neumático levantando un huevo de manera segura.
@@ -378,5 +387,5 @@ La siguiente evidencia corresponde a la implementación física del programa car
 
 ### Video demostrativo del robot ejecutando el patrón de caballo:  
 
-➡️ [Ver implementación en YouTube](https://www.youtube.com/watch?v=oPb9vg-Ojd0)
+➡️ [Ver implementación real en el robot en YouTube](https://www.youtube.com/watch?v=oPb9vg-Ojd0)
 ![Vista previa del laboratorio](Media/real.gif)
