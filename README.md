@@ -312,7 +312,7 @@ A10 --> A11([Fin])
 La siguiente figura muestra la disposición espacial del pallet de 6×5 utilizado en el laboratorio, incluyendo la ubicación del punto de referencia **Origen**, así como los puntos **PuntoX** y **PuntoY** usados por el robot para definir la orientación y el escalado del pallet. Se ilustran también las posiciones iniciales de los huevos 1 y 2 antes de iniciar la rutina del patrón de caballo, lo que permite visualizar claramente el punto de partida de cada trayectoria dentro de la matriz de 30 celdas, tambien se presentan los puntos definidos en el software como Origen, puntoX, puntoY.
 
 ### Puntos definidos para el pallet:
-<img src="Media/puntos.jpeg" alt="pallet" width="30%">
+<img src="Media/puntos.jpeg" alt="pallet" width="50%">
 ### Posiciones iniciales de los huevos
 <img src="Media/Pos_Ini.png" alt="pallet" width="40%">
 
