@@ -351,4 +351,5 @@ La siguiente evidencia corresponde a la implementación física del programa car
 
 
 Video demostrativo del robot ejecutando el patrón de caballo:  
+![Vista previa del laboratorio](Media/real.gif)
 ➡️ [Ver implementación en YouTube](https://www.youtube.com/watch?v=oPb9vg-Ojd0)
