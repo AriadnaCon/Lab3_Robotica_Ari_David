@@ -181,7 +181,7 @@ Una vez establecida la conexión, el software permite:
 El controlador del robot actúa como “cerebro” de tiempo real:  
 **EPSON RC+ envía comandos → el controlador los ejecuta → el robot se mueve.**
 
-### 5.2 Principales funcionalidades del software EPSON RC+ 7.x
+### 5.2 Principales funcionalidades del software EPSON RC+ 7.5.2
 
 #### ** 5.2.1 Programación en SPEL+**
 El software incluye un entorno de desarrollo completo (IDE) para crear programas en **SPEL+**, el lenguaje oficial de EPSON.  
