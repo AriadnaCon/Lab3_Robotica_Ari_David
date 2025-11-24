@@ -72,7 +72,7 @@ RutaInvH2(29) = 9
 RutaInvH2(30) = 1
 
 
-Zp = -150
+Zp = -100
 Fend
 Function MoverHuevo
     If WHICH = 1 Then
@@ -118,4 +118,5 @@ Function main
     On Out_9
     Call PaletizadoCaballo
     Home
+
 Fend
