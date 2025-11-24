@@ -306,4 +306,20 @@ C -->|No| A9[Finalizar recorrido completo del patrón]
 A9 --> A10[Regresar a Home]
 A10 --> A11([Fin])
 ```
-## 8) Diagrama de flujo – Rutina de movimiento con patrón de caballo
+## 8) Plano de planta de la ubicación de la cubeta de huevos y posiciones iniciales de los huevos.
+
+La siguiente figura muestra la disposición espacial del pallet de 6×5 utilizado en el laboratorio, incluyendo la ubicación del punto de referencia **Origen**, así como los puntos **PuntoX** y **PuntoY** usados por el robot para definir la orientación y el escalado del pallet. Se ilustran también las posiciones iniciales de los huevos 1 y 2 antes de iniciar la rutina del patrón de caballo, lo que permite visualizar claramente el punto de partida de cada trayectoria dentro de la matriz de 30 celdas.
+
+<img src="Media/Pos_Ini.png" alt="pallet" width="50%">
+
+Adicionalmente, se presenta el plano de planta donde se observa la ubicación del robot y la disposición de la cubeta de huevos dentro del espacio de trabajo. Este esquema permite identificar la orientación real del manipulador respecto al pallet, así como la relación entre las referencias espaciales usadas para la programación y el entorno físico del laboratorio.
+
+
+
+
+
+
+## 9) Código desarrollado en EPSON RC+ 7.0 para ejecutar la trayectoria con patr´on de caballo, adjuntado como
+anexo dentro del repositorio.
+## 10) Video de la implementación real en el manipulador EPSON T3-401S
+
